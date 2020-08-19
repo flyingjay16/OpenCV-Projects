@@ -6,6 +6,12 @@ def nothing():
 
 cap = cv2.VideoCapture(0)
 
+"""
+hue: color value
+saturation: vibrancy of color
+value: brightness or intensity
+"""
+
 cv2.namedWindow("Tracking")
 cv2.createTrackbar("LH", "Tracking", 0, 255, nothing)
 cv2.createTrackbar("UH", "Tracking", 255, 255, nothing)
